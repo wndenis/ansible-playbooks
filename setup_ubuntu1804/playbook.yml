@@ -73,7 +73,10 @@
         direction: incoming
         policy: deny
         state: enabled
-
+# todo: swarm
+#TCP порт 2377 для обеспечения связи с целью управления кластером;
+#TCP и UDP порт 7946 для связи между нодами;
+#UDP порт 4789 для трафика overlay-сети.
 
     - name: "UFW - open common ports"
       ufw:
